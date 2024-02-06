@@ -15,8 +15,8 @@ This is a simple To-do list application that creates, edits, deletes, and displa
 ## Installations :
 1. Clone the repository and go to the directory.
 2. Run the command "npm install" to install the dependencies.
-3. Run the application using command "npm start"
-4. In the browser , go to the url <a href="http://localhost:3000">http://localhost:3000</a>
+3. Run the application using the command "npm start".
+4. In the browser , go to the URL <a href="http://localhost:3000">http://localhost:3000</a>.
 
 **Prerequisites:** NodeJs, ReactJs, and any Code editing tools like VSCode.
 
