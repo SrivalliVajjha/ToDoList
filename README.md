@@ -4,14 +4,14 @@ This is a simple To-do list application that creates, edits, deletes, and displa
 
 ## Specs:
 
-React.JS Version: 18.2.0
+**React.JS Version:** 18.2.0
 
-react-router-dom Version: 6.21.3
+**react-router-dom Version:** 6.21.3
 
-@iconscout/react-unicons (For Icons) Version: 2.0.2
+**@iconscout/react-unicons (For Icons) Version:** 2.0.2
 
 
-## It has the following main Components:
+## Components:
 
 ### TopNav Component: 
 
