@@ -1,0 +1,16 @@
+
+.completed{
+    text-decoration: line-through;
+}
+
+input[type="radio"]{
+    accent-color: #000;
+}
+
+.task{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: #f2efef;
+    margin:10px;
+}
