@@ -40,6 +40,11 @@ function App() {
     setTasks(updatedTasks);
   }
 
+  const handleDeleteTask = (taskId) =>{
+   const updatedTasks = Tasks.filter(item =>item.id != taskId);
+   setTasks(updatedTasks);
+  }
+
   // useEffect(()=>{
   //   console.log(Tasks);
   // },[Tasks])
@@ -51,7 +56,10 @@ function App() {
       isActive ?
         <div className = "container">
           <TaskForm onAddTask={handleAddTask}></TaskForm>
-          <TaskList tasks={Tasks} handleCompleteTask ={handleCompleteTask} handleEditTitle={handleEditTitle} ></TaskList>
+          <TaskList tasks={Tasks} 
+          handleCompleteTask ={handleCompleteTask}
+           handleEditTitle={handleEditTitle} 
+           handleDeleteTask = {handleDeleteTask}></TaskList>
         </div> 
         :
         <div className="container route-container">

@@ -40,7 +40,8 @@ input[type="radio"] {
 
 .checkIcon,
 .timesIcon,
-.editIcon {
+.editIcon,
+.deleteIcon {
     margin-left: 10px;
     cursor: pointer;
     padding: none;
@@ -54,6 +55,12 @@ input[type="radio"] {
     stroke-width: 1.5px;
 }
 
+.editIcon:hover svg path{
+    stroke:lightgreen;
+}
+.deleteIcon:hover svg path {
+    stroke: red;
+}
 .taskText {
     font-size: 14px;
 }

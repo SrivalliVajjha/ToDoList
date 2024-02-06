@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import Task from '../Task/Task';
 import "./TaskList.css"
 
-export default function TaskList({ tasks, handleCompleteTask, handleEditTitle }) {
+export default function TaskList({ tasks, handleCompleteTask, handleEditTitle,handleDeleteTask }) {
 
     useEffect(() => {
         console.log("TaskList");
@@ -22,21 +22,26 @@ export default function TaskList({ tasks, handleCompleteTask, handleEditTitle })
         handleEditTitle(taskId,taskText);
     }
 
+    const onDeleteTask =(taskId) =>{
+        handleDeleteTask(taskId);
+    }
+
     return (
         <div className="center">
-            {tasks.length === 0 ? <h1>No Tasks</h1>
+            {tasks.length === 0 ? <h2>No Tasks</h2>
                 :
-                <ul class="listUl">
+                <ul className="listUl">
                     {
                         tasks.map((task) => (
 
-                            <Task key={task.id} task={task} handleCompleteTask={onCompleteTask} handleEditTitle={onEditTaskTitle}></Task>
+                            <Task key={task.id} task={task} 
+                            handleCompleteTask={onCompleteTask} 
+                            handleEditTitle={onEditTaskTitle}
+                            handleDeleteTask={onDeleteTask}></Task>
                         ))
                     }
                 </ul>
             }
-
-
         </div>
     )
 }
