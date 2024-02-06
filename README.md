@@ -1,25 +1,31 @@
 # ToDoList
 
-This is a simple To do list application that creates, edits , deletes and displays tasks.
+This is a simple To-do list application that creates, edits, deletes, and displays tasks.
+
+## Specs:
+React.JS Version: 18.2.0
+react-router-dom Version: 6.21.3
+@iconscout/react-unicons (For Icons) Version: 2.0.2
+
 
 ## It has the following main Components:
 
 ### TopNav Component: 
 
-Component for navigation to 2 other pages About and Contact.
+The component is responsible for navigation to 2 other pages About and Contact.
 
 ### TaskForm Component: 
 
-Component for creating a new Task
+The component is responsible for creating a new Task
 
 ### TaskList Component: 
 
-Component Responsible for Displaying List of Task Component
+The component is responsible for displaying a List of Task Component
 
 ### Task Component: 
 
-Component Responsible for Displaying a single Task along with its its edit feature.
+The component is responsible for displaying a single Task along with its edit feature.
 
 ### About and Contact Components: 
 
-Dummy components which are used for navigation , only displays a heading of the corresponding component
+Dummy components which are used for navigation, only display a heading of the corresponding component
