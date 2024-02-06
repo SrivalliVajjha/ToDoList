@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import TopNav from './components/TopNav/TopNav';
 import { Route, Routes, useMatch, useResolvedPath } from 'react-router-dom';
@@ -22,8 +22,18 @@ function App() {
 
   const handleCompleteTask = (taskId) =>{
     const updatedTasks = Tasks.map(task =>{
-      if(task.id == taskId){
+      if(task.id === taskId){
         return {...task,completed:!task.completed};
+      }
+      return task;
+    });
+    setTasks(updatedTasks);
+  }
+
+  const handleEditTitle = (taskId,newTaskTitle) =>{
+    const updatedTasks = Tasks.map((task) =>{
+      if(task.id === taskId){
+        return {...task,title:newTaskTitle}
       }
       return task;
     });
@@ -41,7 +51,7 @@ function App() {
       isActive ?
         <div className = "container">
           <TaskForm onAddTask={handleAddTask}></TaskForm>
-          <TaskList tasks={Tasks} handleCompleteTask ={handleCompleteTask} ></TaskList>
+          <TaskList tasks={Tasks} handleCompleteTask ={handleCompleteTask} handleEditTitle={handleEditTitle} ></TaskList>
         </div> 
         :
         <div className="container route-container">

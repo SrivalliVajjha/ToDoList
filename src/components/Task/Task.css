@@ -1,16 +1,64 @@
-
-.completed{
+.completed {
     text-decoration: line-through;
 }
 
-input[type="radio"]{
+input[type="radio"] {
     accent-color: #000;
 }
 
-.task{
+.initView {
+    width: 100%;
+    margin: 5px;
+}
+
+.task,
+.initView {
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
+}
+
+.task {
     background-color: #f2efef;
-    margin:10px;
+    margin: 15px;
+}
+
+.editInput {
+    border: 0px;
+    outline: none;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+
+.editDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.checkIcon,
+.timesIcon,
+.editIcon {
+    margin-left: 10px;
+    cursor: pointer;
+    padding: none;
+    outline: none;
+    border: none;
+}
+
+.checkIcon:hover svg path,
+.timesIcon:hover svg path {
+    stroke: black;
+    stroke-width: 1.5px;
+}
+
+.taskText {
+    font-size: 14px;
+}
+
+.radio-input-div {
+    display: flex;
+    align-items: center;
 }
