@@ -3,8 +3,11 @@
 This is a simple To-do list application that creates, edits, deletes, and displays tasks.
 
 ## Specs:
+
 React.JS Version: 18.2.0
+
 react-router-dom Version: 6.21.3
+
 @iconscout/react-unicons (For Icons) Version: 2.0.2
 
 
