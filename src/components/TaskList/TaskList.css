@@ -1,11 +1,12 @@
-ul{
-    list-style: none;
-    text-align: left;
-}
+
 .listUl{
     width:50%;
+    overflow-y: scroll ;
+    list-style: none;
+    height:20em;
 }
 
-div{
- text-align: center;
+.center{
+    display:flex;
+    justify-content: center;
 }

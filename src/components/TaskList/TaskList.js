@@ -19,7 +19,7 @@ export default function TaskList({ tasks,handleCompleteTask }) {
     }
 
     return (
-        <div>
+        <div className="center">
             {tasks.length === 0 ? <h1>No Tasks</h1>
                 :
                     <ul class="listUl">
