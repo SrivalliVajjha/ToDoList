@@ -13,9 +13,12 @@ This is a simple To-do list application that creates, edits, deletes, and displa
 **@iconscout/react-unicons (For Icons) Version:** 2.0.2
 
 ## Installations :
-1. Clone the repository 
+1. Clone the repository and go to the directory.
 2. Run the command "npm install" to install the dependencies.
-3. **Prerequisites:** NodeJs, ReactJs, and any Code editing tools like VSCode.
+3. Run the application using command "npm start"
+4. In the browser , go to the url <a href="http://localhost:3000">http://localhost:3000</a>
+
+**Prerequisites:** NodeJs, ReactJs, and any Code editing tools like VSCode.
 
 ## Components:
 
