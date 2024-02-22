@@ -33,11 +33,10 @@ export default function TaskList({ tasks, handleCompleteTask, handleEditTitle,ha
                 <ul className="listUl">
                     {
                         tasks.map((task) => (
-
-                            <Task key={task.id} task={task} 
-                            handleCompleteTask={onCompleteTask} 
-                            handleEditTitle={onEditTaskTitle}
-                            handleDeleteTask={onDeleteTask}></Task>
+                        <Task key={task.id} task={task}
+                            handleCompleteTask = {onCompleteTask}
+                            handleEditTitle = {onEditTaskTitle}
+                            handleDeleteTask = {onDeleteTask}></Task>
                         ))
                     }
                 </ul>
